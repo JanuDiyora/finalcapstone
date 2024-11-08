@@ -56,7 +56,7 @@ const Footer = () => {
             </div>
 
             <div className="footer-bottom">
-                <p>©Copyright 2024 | All rights Reserved | Powered by Speed Tech</p>
+                <p className="footer-data">©Copyright 2024 | All rights Reserved | Powered by Speed Tech</p>
                 <div className="social-icons">
                     <a href="#"><i className="fab fa-facebook-f"></i></a>
                     <a href="#"><i className="fab fa-linkedin-in"></i></a>
