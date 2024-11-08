@@ -1,38 +1,116 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  padding: 20px;
   display: flex;
+  justify-content: flex-start; /* Aligns the content to the left */
+ 
   flex-direction: column;
+}
+data{
+  margin-left: 40px;
+}
+.roi-info{
+ margin-left: 70px;
+ margin-right: 60px;
+ margin-bottom: 50px;
+ margin-top: 50px;
+}
+header {
+  text-align: left; /* Aligns text to the left */
+  padding-left: 20px; /* Optional: Adds some padding to the left */
+  font-size: 15px;
+}
+
+.calculator-container {
+  display: flex;
+  justify-content: flex-start; /* Aligns the calculator and result to the left */
+  gap: 20px;
+  margin-left: 90px; /* Remove any unnecessary margin */
+}
+
+.calculator, .result-display {
+  border: 1px solid #ddd;
+  padding: 20px;
+  width: 550px;
+  margin: 10px ; /* Space between calculators */
+  box-sizing: border-box;
+  border-radius: 8px;
+  margin: 30px;
+}
+
+.calculator .form-group {
+  margin-bottom: 15px;
+}
+
+.calculator label {
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.calculator input, .calculator select {
+  width: 55%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+button {
+  width: 30%;
+  padding: 10px;
+  margin-top: 10px;
+  margin: 20px;
+  background-color:rgb(220, 147, 11) ;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: black;
+}
+
+.result-display {
+  text-align: left;
+}
+
+.result-display h3 {
+  margin-top: 0;
+  font-size: 18px;
+}
+.chart {
+  margin-top: 20px;
+  width: 100%;
+  height: 300px; /* Adjust height as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-invested, .chart-profit {
+  width: 48%; /* Reduced width for a 2-chart side-by-side layout */
+  height: 100px;
+  color: white;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  border-radius: 4px;
 }
 
-.App-link {
-  color: #61dafb;
+.chart-invested {
+  background-color: blue;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.chart-profit {
+  background-color: orange;
 }
+
